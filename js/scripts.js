@@ -49,3 +49,64 @@ $(function() {
 		event.preventDefault();
 	});
 });
+
+
+$(".float-contraste").click(function() {
+	$("body").css("background-color","black");
+	$("body").css("color","yellow");
+	$("section").removeClass("bg-light");
+	$("nav").css("background-color","black");
+	$("a").css("color","yellow");
+	$("div").css("color","yellow");
+	$("p").css("color","yellow");
+	$("footer").removeClass("bg-light");
+	$("button").css("background-color","black");
+	$("button").css("color","yellow");
+});
+
+
+var grayscale = 0;
+var invert = 0;
+var img = document.getElementsByName("_imagePage");
+var labels = document.getElementsByTagName("LABEL");
+var grayP = labels[0].nextElementSibling;
+var invertP = labels[1].nextElementSibling;
+
+const onInvert = (e) => {
+  invert = e.target.value * 0.1;
+  adjustFilter();
+};
+
+const onGrayscale = (e) => {
+  alert("asd");
+  
+};
+
+const adjustFilter = () => {
+	 
+  for(var x=0; x < img.length; x++)   // comparison should be "<" not "<="
+  {
+ 
+	var filter = `grayscale(${grayscale}) invert(${invert})`;
+	img[x].style.filter = filter;
+	//grayP.innerText = Math.round(10 * grayscale) / 10;
+	//invertP.innerText = Math.round(10 * invert) / 10;
+
+ }
+  
+};
+
+var ins = document.getElementsByTagName("input");
+function grayscalepage() {   
+	grayscale = 10 * 0.1;
+  adjustFilter(); 
+
+};
+function contrastscalepage() {   
+	invert = 10 * 0.1;
+	adjustFilter(); 
+  
+  };
+
+ins[1].addEventListener("change", onInvert);
+

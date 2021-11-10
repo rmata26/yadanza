@@ -11290,8 +11290,9 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
+  height: 150px;
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
   overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -11304,7 +11305,7 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-bottom: 18rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -11364,8 +11365,8 @@ footer.footer {
 
 .img_logo {
   content:url(../img/logoyadanza-02.png);
-  height: 10%;
-  width: 10%;
+  height: 15%;
+  width: 15%;
 }
 
 .timeline {
@@ -11757,6 +11758,63 @@ footer.footer {
  
 }
 
+.float-gris{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:95%;
+	right:11%;
+	background-color:#6A6A6A;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #939E9E;
+  padding: 0;
+}
+
+.my-float-gris{
+	margin-top:7px;
+ 
+}
+
+.float-contraste{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:95%;
+	right:14%;
+	background-color:#6A6A6A;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #939E9E;
+  padding: 0;
+}
+
+.my-float-contraste{
+	margin-top:7px;
+ 
+}
+
+.float-inverted{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:95%;
+	right:17%;
+	background-color:#6A6A6A;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #939E9E;
+  padding: 0;
+}
+
+.my-float-inverted{
+	margin-top:7px;
+ 
+}
+
 @media (max-width: 992px) {
   .float-play{
 
@@ -11785,7 +11843,7 @@ footer.footer {
 	bottom: 0;
 	height: 250px;
 	margin-left: -3px;
-	margin-bottom: -3px;
+	margin-bottom: 3%;
 }
 
 #feedback-form {
@@ -11814,7 +11872,7 @@ footer.footer {
 	width: 120px;
 	height: 42px;
 	background-color: rgba(0,0,0,0.8);
-	margin-top: 100%;
+	margin-top: 60px;
 	margin-left: -42px;
 	padding-top: 5px;
 	-moz-border-radius: 3px;
@@ -11834,3 +11892,14 @@ footer.footer {
 #feedback-form textarea {
 	resize: none;
 }
+
+/*Filter styles*/
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); }
