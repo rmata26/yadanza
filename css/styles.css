@@ -7284,6 +7284,7 @@ textarea.form-control-lg {
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
+  height: 450px;
 }
 
 .mt-0 {
@@ -11290,7 +11291,6 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  height: 150px;
   padding-top: 8rem;
   padding-bottom: 5rem;
   overflow: hidden;
@@ -11305,13 +11305,13 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
-    padding-bottom: 18rem;
+    padding-bottom: 25rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
-
+ 
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -11627,6 +11627,16 @@ footer.footer {
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
+}
+
+.nav-link-selected {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+}
+
+.nav-link:hover {
+  border-style: solid;
+  border-width: 0 0 2px 0;
 }
 
 .configuration{

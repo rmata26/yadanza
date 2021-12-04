@@ -16,6 +16,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     </head>
     <body id="container">
@@ -27,7 +30,7 @@
             </div>
         </nav>
        -->
-       <section class="page-section configuration " name="_imagePage">
+       <section class="page-section configuration " name="_imagePage" id="aheaderpage">
 
              
             <br>       
@@ -45,13 +48,13 @@
                 <img class="img_logo"  class="grayscale" />
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link fontplus" href="#services" >Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link fontplus" href="#portfolio">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link fontplus" href="#aheaderpage" >Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link fontplus" href="#anosotros">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link fontplus" href="#about">Blog</a></li>
                         <li class="nav-item"><a class="nav-link fontplus" href="#team" >Galeria</a></li>
                         <li class="nav-item"><a class="nav-link fontplus" href="#contact">Talleres</a></li>
                         <li class="nav-item"><a class="nav-link fontplus" href="#contact">Donaciones</a></li>
-                        <li class="nav-item"><a class="nav-link fontplus" href="#contact" >Ya Danza!</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -67,13 +70,13 @@
             </div>
         </header>
         <!-- Icons Grid-->
-        <section class="showcase fontplus" name="_imagePage">
+        <section class="showcase fontplus" name="_imagePage" id="anosotros">
             <div class="container-fluid p-0" >
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-2" style="background-image: url('img/logoyadanza-02.png');margin-top: -8%;" id="acercaid"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2 class="fontplus fontplus">Acerca de Nosotros</h2>
-                        <p class="lead mb-0 fontplus">Un proyecto que nació desde la Asociación Desampa Inclusivo Su objetivo es que la población con discapacidad pueda participar de la danza por medio de este espacio. Poseen varias iniciativas y talleres en las que cualquier persona pueda participar</p>
+                        <p class="font-weight-light mb-0 fontplus">Un proyecto que nació desde la Asociación Desampa Inclusivo Su objetivo es que la población con discapacidad pueda participar de la danza por medio de este espacio. Poseen varias iniciativas y talleres en las que cualquier persona pueda participar</p>
                     </div>
                 </div>
                 
@@ -118,21 +121,21 @@
                             <img src="img/logoyadanza-02ind" width="50px">
                              
                             <h3 class=" fontplus">Clases de danza</h3>
-                            <p class="lead mb-0 fontplus">Con estas clases se trabaja a partir de la diversidad y la inclusión, dándoles a los participantes la oportunidad de vivir la experiencia de estar en un escenario para compartir y disfrutar su trabajo.</p>
+                            <p class="font-weight-light mb-0 fontplus">Con estas clases se trabaja a partir de la diversidad y la inclusión, dándoles a los participantes la oportunidad de vivir la experiencia de estar en un escenario para compartir y disfrutar su trabajo.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                             <img src="img/logoyadanza-02ind" width="50px">
                             <h3 class=" fontplus">Charlas</h3>
-                            <p class="lead mb-0 fontplus">Con las charlas se pretende lograr la inclusión de personas con discapacidades en las actividades cotidianas, esto conlleva prácticas y políticas diseñadas para identificar y eliminar barreras, como obstáculos físicos, de comunicación y de actitud, que dificultan la capacidad de las personas de tener una participación plena en la sociedad.</p>
+                            <p class="font-weight-light mb-0 fontplus">Con las charlas se pretende lograr la inclusión de personas con discapacidades en las actividades cotidianas, esto conlleva prácticas y políticas diseñadas para identificar y eliminar barreras, como obstáculos físicos, de comunicación y de actitud, que dificultan la capacidad de las personas de tener una participación plena en la sociedad.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                             <img src="img/logoyadanza-02ind" width="50px">
                             <h3 class=" fontplus">Talleres</h3>
-                            <p class="lead mb-0 fontplus">Tienen como objetivo crear un espacio de recreación, aprendizaje, participación y socialización para personas con discapacidad y de esta forma contribuir a la mejora de su calidad de vida.</p>
+                            <p class="font-weight-light mb-0 fontplus">Tienen como objetivo crear un espacio de recreación, aprendizaje, participación y socialización para personas con discapacidad y de esta forma contribuir a la mejora de su calidad de vida.</p>
                         </div>
                     </div>
                 </div>
@@ -143,6 +146,7 @@
                 <div class="ayuda"  >
     <center><h3 class=" fontplus">Contamos con tres tipos de apoyo</h3></center> 
     <br>
+    <script>jQuery.noConflict();  </script>
     <div class="row">
       <div class="col-4" name="_imagePage">
         <center><button class="btn btn-primary me-2 fontplus" type="button" data-bs-toggle="modal" data-bs-target="#tcu" style="background-color: #DC6A00; border-color: #DC6A00;">Trabajo
@@ -249,53 +253,23 @@
          
         <!-- Call to Action-->
         <section class="call-to-action text-white text-center" id="signup" name="_imagePage">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <h3 class="mb-4">Dirección
-                            San José, Desamparados.
-                            Del cementerio 500m Sur y 50m al Oeste.</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3930.4127322217346!2d-84.071799!3d9.899541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e31c8eb16d37%3A0x9b366294ce6458fb!2sC.%20Araya%2C%20San%20Jos%C3%A9%2C%20Desamparados!5e0!3m2!1ses!2scr!4v1625942806185!5m2!1ses!2scr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                                        </iframe>
-                                       
-                                </div>
-                                
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                                              
-                                 
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3930.4127322217346!2d-84.071799!3d9.899541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e31c8eb16d37%3A0x9b366294ce6458fb!2sC.%20Araya%2C%20San%20Jos%C3%A9%2C%20Desamparados!5e0!3m2!1ses!2scr!4v1625942806185!5m2!1ses!2scr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                                        </iframe>
-                                       
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
+          <div class="container position-relative">
+            <h2 class="mb-5 fontplus text-center">Contáctenos</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3930.4127322217346!2d-84.071799!3d9.899541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e31c8eb16d37%3A0x9b366294ce6458fb!2sC.%20Araya%2C%20San%20Jos%C3%A9%2C%20Desamparados!5e0!3m2!1ses!2scr!4v1625942806185!5m2!1ses!2scr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+              </div>
+
+              <div class="col-md-6">
+                <ul>
+                  <li><strong style="margin: 0; padding: 0;">Dirección:</strong>San José, Desamparados. Del cementerio 500m Sur y 50m al Oeste.</li>
+                  <li><strong>Teléfono:</strong>+506 8369 1359</li>
+                  <li><strong>Correo Electrónico:</strong>info@desampainclusivo.com</li>
+                </ul>
+              </div>
             </div>
+        </div>
         </section>
         <!-- Footer-->
         <footer class="footer bg-light" name="_imagePage">
@@ -311,39 +285,45 @@
         </footer>
         
         <!--Accesibilidad-->
-        <a href="#" class="float-play" onclick="playAudio()">
-            <i class="fa fa-play my-float-play" ></i>
-        </a>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#" class="float-play" onclick="playAudio()">
+              <i class="fa fa-play my-float-play" ></i>
+            </a>
 
-        <a href="#" class="float-aplus" onclick="changeSizeByBtn(25)">
-            <i class="fa fa-font my-float-aplus" >+</i>
-        </a>
+            <a href="#" class="float-aplus" onclick="changeSizeByBtn(25)">
+                <i class="fa fa-font my-float-aplus" >+</i>
+            </a>
 
-        <a href="#" class="float-aminus" onclick="changeSizeByBtn(20)">
-            <i class="fa fa-font my-float-aminus" >-</i>
-        </a>
+            <a href="#" class="float-aminus" onclick="changeSizeByBtn(20)">
+                <i class="fa fa-font my-float-aminus" >-</i>
+            </a>
 
-        <a href="#" class="float-gris" onclick="grayscalepage()">
-          <i class="fa fa-barcode my-float-gris" ></i>
-        </a>
+            <a href="#" class="float-gris" onclick="grayscalepage()">
+              <i class="fa fa-barcode my-float-gris" ></i>
+            </a>
 
-        <a href="#" class="float-contraste" >
-          <i class="fa fa-eye-slash my-float-contraste"></i>
-        </a>
+            <a href="#" class="float-contraste" >
+              <i class="fa fa-eye-slash my-float-contraste"></i>
+            </a>
 
-        <a href="#" class="float-inverted" onclick="contrastscalepage()">
-          <i class="fa fa-adjust my-float-inverted" ></i>
-        </a>
-        <!--Redes-->
-        <a href="https://www.facebook.com/yadanzacr" class="float-face" target="_blank">
-            <i class="fa fa-facebook-official my-float-face" ></i>
-        </a>
-        <a href="https://www.instagram.com/yadanzacr/" class="float-insta" target="_blank">
-            <i class="fa fa-instagram my-float-insta" ></i>
-        </a>
-        <a href="https://api.whatsapp.com/send/?phone=%2B50683691359&text&app_absent=0" class="float-what" target="_blank">
-            <i class="fa fa-whatsapp my-float-what" ></i>
-        </a>
+            <a href="#" class="float-inverted" onclick="contrastscalepage()">
+              <i class="fa fa-adjust my-float-inverted" ></i>
+            </a>
+
+            <!--Redes-->
+            <a href="https://www.facebook.com/yadanzacr" class="float-face" target="_blank">
+                <i class="fa fa-facebook-official my-float-face" ></i>
+            </a>
+            <a href="https://www.instagram.com/yadanzacr/" class="float-insta" target="_blank">
+                <i class="fa fa-instagram my-float-insta" ></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B50683691359&text&app_absent=0" class="float-what" target="_blank">
+                <i class="fa fa-whatsapp my-float-what" ></i>
+            </a>
+          </div>
+        </div>
+        
 
         <div id="feedback" >
           <div id="feedback-form" style='display:none;background-color:#ffffff;padding:40;' class="col-xs-4 col-md-4 panel panel-default">
